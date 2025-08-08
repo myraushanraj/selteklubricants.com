@@ -302,6 +302,30 @@
             color: #b8e6c1;
         }
 
+        /* Video Section */
+        .video-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .video-container video {
+            transition: all 0.3s ease;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .video-container video:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3) !important;
+        }
+
         /* Contact Section */
         .contact {
             padding: 5rem 0;
@@ -481,6 +505,19 @@
             <h1>SELTEK LUBRICANTS & CHEMICALS</h1>
             <p>Prime & Lubrication for Concrete Pump Pipe Line - Professional grade solutions for construction industry professionals.</p>
             <a href="#contact" class="cta-button">Get Quote Today</a>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title">Watch Our Story</h2>
+            <div class="video-container">
+                <video controls poster="logo.png" style="width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    <source src="company_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
     </section>
 
